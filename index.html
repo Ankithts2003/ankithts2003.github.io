@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of an aspiring AI Engineer. Explore my skills, projects and experience.">
+  <title>Ankith | AI Engineer Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --bg: #080d18;
+      --card: #111a2b;
+      --text: #f1f5f9;
+      --muted: #9aa9bd;
+      --accent: #38bdf8;
+      --border: #243248;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(8,13,24,.95);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 85px 0;
+      scroll-margin-top: 65px;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .tag {
+      color: var(--accent);
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 68px);
+      line-height: 1.15;
+      margin: 18px 0;
+    }
+
+    h1 span, h2 span {
+      color: var(--accent);
+    }
+
+    .hero p, .about p {
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 7px;
+      background: var(--accent);
+      color: #07111e;
+      font-weight: bold;
+    }
+
+    .btn.outline {
+      background: transparent;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+    }
+
+    .section-title {
+      font-size: 34px;
+      margin-bottom: 35px;
+    }
+
+    .about, .project, .skill {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .skill h3, .project h3 {
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    .skill p, .project p {
+      color: var(--muted);
+    }
+
+    .project a {
+      display: inline-block;
+      color: var(--accent);
+      margin-top: 15px;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    footer {
+      text-align: center;
+      border-top: 1px solid var(--border);
+      padding: 25px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media(max-width: 650px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 15px 0;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .hero {
+        min-height: 75vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav class="container">
+    <a class="logo" href="#home">Ankith.dev</a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero container" id="home">
+    <div>
+      <div class="tag">Welcome to my portfolio</div>
+      <h1>Hi, I'm <span>[Your Full Name]</span></h1>
+      <h2>AI Engineer | Machine Learning | Generative AI</h2>
+      <p>
+        I am passionate about building intelligent applications
+        using Artificial Intelligence, Machine Learning and
+        modern backend technologies. I enjoy solving real-world
+        problems through technology.
+      </p>
+
+      <div class="buttons">
+        <a class="btn" href="#projects">Explore My Projects</a>
+        <a class="btn outline"
+           href="https://github.com/Ankithts2003"
+           target="_blank" rel="noopener">GitHub Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="about">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="about">
+      <p>
+        Hello! I'm [Your Full Name], an aspiring AI Engineer
+        interested in Artificial Intelligence, Machine Learning,
+        Deep Learning, Large Language Models and backend development.
+        I enjoy learning new technologies and developing practical
+        projects that solve meaningful problems.
+      </p>
+      <br>
+      <p>
+        Education: [Your Degree and College]<br>
+        Career Interest: AI Engineer / ML Engineer
+      </p>
+    </div>
+  </section>
+
+  <section class="container" id="skills">
+    <h2 class="section-title">Technical <span>Skills</span></h2>
+    <div class="grid">
+      <div class="skill">
+        <h3>Programming</h3>
+        <p>Python, SQL, JavaScript</p>
+      </div>
+      <div class="skill">
+        <h3>AI & Machine Learning</h3>
+        <p>Machine Learning, Deep Learning, NLP, Generative AI</p>
+      </div>
+      <div class="skill">
+        <h3>Backend Development</h3>
+        <p>FastAPI, REST APIs, Database Management</p>
+      </div>
+      <div class="skill">
+        <h3>Tools & Technologies</h3>
+        <p>Git, GitHub, Docker, VS Code</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="projects">
+    <h2 class="section-title">Featured <span>Projects</span></h2>
+    <div class="grid">
+
+      <div class="project">
+        <h3>AI Project 01</h3>
+        <p>
+          Add your project description here. Explain the problem,
+          your solution and the technologies you used.
+        </p>
+        <a href="https://github.com/Ankithts2003"
+           target="_blank" rel="noopener">View Project →</a>
+      </div>
+
+      <div class="project">
+        <h3>AI Project 02</h3>
+        <p>
+          Add details about your second AI or Machine Learning
+          project and its real-world application.
+        </p>
+        <a href="https://github.com/Ankithts2003"
+           target="_blank" rel="noopener">View Project →</a>
+      </div>
+
+      <div class="project">
+        <h3>Backend Project</h3>
+        <p>
+          Add details about an API, backend application or
+          full-stack project you have developed.
+        </p>
+        <a href="https://github.com/Ankithts2003"
+           target="_blank" rel="noopener">View Project →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container" id="contact">
+    <div class="contact">
+      <h2 class="section-title">Let's <span>Connect</span></h2>
+      <p>I'm interested in AI projects, collaboration and opportunities.</p>
+
+      <div class="buttons" style="justify-content:center">
+        <a class="btn"
+           href="https://github.com/Ankithts2003"
+           target="_blank" rel="noopener">GitHub</a>
+
+        <a class="btn outline"
+           href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/"
+           target="_blank" rel="noopener">LinkedIn</a>
+
+        <a class="btn outline"
+           href="mailto:YOUR-EMAIL@example.com">Email Me</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> [Your Full Name]. All rights reserved.</p>
+  <p>Designed and developed with passion.</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
